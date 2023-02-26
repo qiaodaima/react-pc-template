@@ -9,6 +9,7 @@
     "start": "npm run dev"
   },
   "dependencies": {
+    "eslint": "^8.34.0",
     "umi": "^4.0.52"
   },
   "devDependencies": {
