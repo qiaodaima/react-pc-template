@@ -1,5 +1,13 @@
 import { defineConfig } from 'umi';
 
-export default defineConfig({
+const developServerTarget = 'https://www.baidu.com';
+const serverTarget = developServerTarget;
 
+export default defineConfig({
+  proxy: {
+    '/api/v1': {
+      target: serverTarget,
+      changeOrigin: true,
+    },
+  }
 });
